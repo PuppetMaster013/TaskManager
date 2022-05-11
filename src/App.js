@@ -1,11 +1,15 @@
-import NoteContainer from "./Components/NoteContainer";
+import NoteContainer from "./Components/NoteContainer/NoteContainer";
+// import Timer from "./Components/Timer/Timer";
+import ActiveTaskPage from "./Pages/ActiveTaskPage/ActiveTaskPage";
 
 function App() {
   return (
     <div className="App">
-      <p>This is the sample font</p>
-      <NoteContainer/>
+      {/* <p>This is the sample font</p> */}
+      {/* <NoteContainer/> */}
+      <ActiveTaskPage/>
     </div>
+    
   );
 }
 

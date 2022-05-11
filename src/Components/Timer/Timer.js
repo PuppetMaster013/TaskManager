@@ -9,15 +9,20 @@ function Timer() {
     testTime.getSeconds(),
   ];
   useEffect(()=>{
-    setTaskTime(`${firstHour}:${firstMinute}:${firstSecond}`)
+    setTaskTime(`${firstMinute}:${firstSecond}`)
   },[])
+  function contDown(endTimeSeconds){
+    
+  }
   setInterval(()=>{
-    setTaskTime(`${firstHour}:${firstMinute}:${firstSecond}`);
+    clearInterval();
+    setTaskTime(`${testTime.getMinutes()}:${testTime.getSeconds()}`);
   },1000)
+//   console.log(firstSecond)
   return (
     <>
-      <div>Timer</div>
-      <div >{taskTime}</div>
+      {/* <div>Timer</div> */}
+      <div style={{color:"white",fontSize:"3em",fontFamily:"monospace"}}>{taskTime}</div>
     </>
   );
 }

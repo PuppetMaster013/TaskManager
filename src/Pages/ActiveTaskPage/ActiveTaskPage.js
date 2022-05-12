@@ -13,7 +13,7 @@ function ActiveTaskPage() {
     <StyledHompage>
       <PageContainer>
         <StyledActiveContainer>
-          <StyledActiveTask>Finish Redux</StyledActiveTask>
+          <StyledActiveTask>Play MineCraft</StyledActiveTask>
           <PomodoroTimer />
           <TaskActionContainer/>
         </StyledActiveContainer>

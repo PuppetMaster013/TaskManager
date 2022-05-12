@@ -1,14 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import NumericTimer from './NumericTimer'
 import { StyledClock } from './PomodoTimer.style'
-import Timer from './Timer'
 
 const PomodoroTimer = () => {
 
+    const [message, setMessage] = useState("keep working")
+
+    const handleWorkEnd = ()=>{
+        setMessage("rest for a while")
+        alert("take a break")
+    }
+    const handleBreakEnd = ()=>{
+        setMessage("keep working")
+        alert("return to work")
+    }
 
   return (
        <StyledClock>
-       <NumericTimer/>
+       <NumericTimer workEnd={handleWorkEnd} breakEnd={handleBreakEnd}/>
+       <div style={{color:"white"}}>{message}</div>
        </StyledClock>
     )
 }

@@ -1,5 +1,3 @@
-import NoteContainer from "./Components/NoteContainer/NoteContainer";
-// import Timer from "./Components/Timer/Timer";
 import ActiveTaskPage from "./Pages/ActiveTaskPage/ActiveTaskPage";
 
 function App() {
